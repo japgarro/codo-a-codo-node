@@ -1,0 +1,193 @@
+html{
+    font-size: 16px;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+
+.main{
+    width: 100%;
+    height: auto;
+    margin: 0 24px;
+    overflow-x: hidden;
+}
+
+.main__title {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    font-weight: 800;
+    font-style: normal;
+    font-family: "Playfair Display SC", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.main__section {
+    width: 100%;
+    height: auto;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 40px;
+}
+
+.main__section__container {
+    display: grid;
+    justify-content: center;
+    width: 250px;
+    height: auto;
+    margin: auto;
+}
+
+
+/* Selecciona el a todos los elementos hijos, menos el último */
+.main__section__container > *:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+
+.main__section__container__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 250px;
+    min-height: 460px;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 25px;
+
+}
+
+.main__section__container__card > * {
+    margin: 2px;
+}
+
+.main__section__container__card > img {
+    width: 180px;
+    min-height: 230px;
+}
+
+.container__card__title {
+    min-height: 3.5rem;
+    font-weight: bold;
+    align-self: flex-start;
+    padding-left: 15px;
+}
+
+.container__card__detail {
+    width: 80%;
+    min-height: 2.5rem;
+    height: auto;
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-weight: 400;
+}
+
+.container__card__detail p {
+    min-height: 2.5rem;
+}
+
+
+
+.container__card__price {
+    position: absolute;
+    bottom: 4rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 1px;
+}
+
+.main__section__container__card .container__card__buttons {
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+
+}
+
+.container__card__buttons span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+}
+
+.container__card__buttons button {
+    bottom: 20px;
+    border-radius: 50%;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+}
+
+.container__card__buttons button:hover {
+    cursor: pointer;
+}
+
+
+
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .main__title {
+        min-width: 630px;
+    }
+
+    .main__section__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+   
+    .main__section .main__section__container > * {
+        margin: 0;
+    }
+}
+
+/* laptop */
+@media (min-width: 1024px) {
+
+    .main__section{
+        min-width: 1024px;
+    }
+
+    .main__section__container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;   
+     }
+     .main__section .main__section__container > * {
+        margin: 0;
+    }
+}
+
+
+/* laptop 1440px */
+@media (min-width: 1440px) {
+
+    .main__section__container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;    
+   }
+   .main__section .main__section__container > * {
+    margin: 0;
+}
+}
