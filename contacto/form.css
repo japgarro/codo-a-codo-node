@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    /* position: relative; */
+}
+
+form {
+    background-color: #A67244;
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgb(0, 0, 0 0,2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.input-group select{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #BFAF8F;
+    border: solid 2px #BFAF8F;
+    outline: none;
+    height: 35px;
+    padding: 5px 10px ;
+    
+}
+    
+select option{
+    color: #18150E;
+    font-size: 15px;
+    margin-bottom: 15px;
+
+}
+
+h2{
+    color: #18150E;
+    font-size: 35px;
+}
+
+label{
+    color: #18150E;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input, textarea{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 17px 25px ;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #BFAF8F;
+    border: solid 2px #BFAF8F;
+    color: #18150E;
+    outline: none;
+}
+
+.btn{
+    font-size: 16px;
+    border: 0;
+    border-radius: 25px;
+    background-color: #BFAF8F;
+    box-shadow:0 0 20px #18150E;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #733A26;
+}
+
+@media (max-width: 991px) 
+{
+    body {
+        padding: 30px;
+    }
+
+    form{
+        padding: 50px 30px;
+        width: 50%;
+    }
+
+    input{
+        padding: 15px;
+    }
+
+}
