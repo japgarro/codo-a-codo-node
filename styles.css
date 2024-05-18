@@ -78,13 +78,13 @@ h2 {
 footer {
     background-color: #18150E;
     color: white;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap; /* Para permitir el ajuste automático en múltiples líneas */
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
