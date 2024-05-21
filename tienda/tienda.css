@@ -28,6 +28,9 @@ ul {
     padding: 0;
     display: flex;
     justify-content: space-around;
+    font-family: "Playfair Display SC", serif;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 li {
@@ -39,9 +42,7 @@ li a {
     display: block;
     color: white;
     text-decoration: none;
-    padding: 10px 0;
-    font-weight: bold;
-    font-size: 1.2rem;
+    padding: 10px 0; 
 }
 
 li img {
