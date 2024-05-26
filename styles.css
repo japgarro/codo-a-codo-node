@@ -190,18 +190,38 @@ hr {
 }
 
 .card {
-    /* Estilos de la tarjeta */
-    background-color: #F2C572; /* Color de fondo de la tarjeta */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    width: 100%; /* Ocupa todo el ancho disponible */
-    margin: 0; /* Elimina los márgenes */
+    background-color: #F2C572; /
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 100%; 
+    margin: 0; 
 }
 
 .card-container {
-    /* Estilos del contenedor de la tarjeta */
-    margin: 20px auto; /* Margen exterior para centrar la tarjeta */
-    max-width: 99%; /* Ancho máximo de la tarjeta */
+  
+    margin: 20px auto; 
+    max-width: 99%; 
     
 }
 
+.card-container1 {
+    margin: 20px auto; 
+    max-width: 99%;
+    display: flex;
+    justify-content: center;
+}
+
+.card1 {
+    background-color: #F2C572;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card1 iframe {
+    width: 100%;
+    border-radius: 10px;
+}
