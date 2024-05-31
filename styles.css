@@ -1,9 +1,11 @@
-body, html {
+body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: auto;
+    width: 100%;
     font-family: 'Poppins', Arial, sans-serif;
     font-size: 15px; /* Tamaño de fuente más pequeño */
+    box-sizing: border-box;
 }
 
 .text-container {
@@ -109,31 +111,87 @@ footer {
     padding: 10px;
     text-align: center;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    width: auto;
+    height: 250px;
+    overflow-x:hidden;
 }
 
-.map-container,
-.redes {
-    flex: 1;
+footer .redes .redes__texto_redes {
+    position: relative;
+    bottom: 17px;
+}
+
+footer .map-container .redes__texto_map {
+    position: relative;
+    bottom: 14px;
 }
 
 .map-container {
     margin-right: 20px;
+    padding-left: 40px;
 }
+
 
 .map-container iframe {
-    width: 100%; /* Ajustado para que el iframe ocupe el ancho completo del contenedor */
-    height: 300px; /* Ajustar la altura según tu preferencia */
+    width: auto; 
+    height: auto; 
 }
 
-.redes img {
-    width: 40px;
-    margin: 0 10px;
+
+.redes {
+   padding-right: 60px;
+   border-left: 1px solid white;
+   padding-left: 15px;
+}
+
+.redes__logos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 180px;
+    height: 150px;
+    position: relative;
+    border-radius: 50%;
+    padding-left: 30px;
+    margin-top: 5px;
+}
+
+.redes a {
+    display: inline-block;
+    width: 35px;
+    height: 38px;
+    position: relative;
+    border-radius: 50%;
+    background-color: white;
+}
+
+
+.redes #redes_instagram::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -3px;
+    width: 44px;
+    height: 41px;
+    background-image: url(./img/instagram.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.redes #redes_facebook::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -3px;
+    width: 44px;
+    height: 41px;
+    background-image: url(./img/facebook.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
 }
 
 /* Añadir media queries para la responsividad */
