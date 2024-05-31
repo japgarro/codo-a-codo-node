@@ -12,6 +12,9 @@ body {
 nav {
     background-color: #18150E;
     padding: 10px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
 }
 
 ul {
@@ -70,36 +73,123 @@ h2 {
     height: 100%;
     object-fit: cover;
 }
-/* FOOTER */
+
+
+
+
 footer {
     background-color: #18150E;
     color: white;
     padding: 10px;
     text-align: center;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Para permitir el ajuste automático en múltiples líneas */
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    flex-wrap: wrap;
+    width: auto;
+    height: 250px;
+    overflow-x:hidden;
 }
 
-.map-container,
-.redes {
-    flex: 1; /* Para que ocupen el mismo espacio y se distribuyan horizontalmente */
+footer .redes .redes__texto_redes {
+    position: relative;
+    bottom: -2px;
+    
 }
+
+footer .redes .redes__texto_redes::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    right: 75px;
+    width: 53%;
+    height: auto;
+    border-bottom: 1px solid white;
+}
+
+footer .map-container .redes__texto_map {
+    position: relative;
+    bottom: 6px;
+    left: -76px;
+}
+
+footer .map-container .redes__texto_map::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    right: 75px;
+    width: 53%;
+    height: auto;
+    border-bottom: 1px solid white;
+}
+
+
 
 .map-container {
-    margin-right: 20px; /* Espacio entre el mapa y los íconos */
+    margin-right: 20px;
+    padding-left: 40px;
 }
+
+
 .map-container iframe {
-    width: 25%; /* Hace que el ancho del mapa se ajuste al ancho del contenedor */
-    height: 100px; /* Ajusta la altura del mapa según tu preferencia */
+    width: auto; 
+    height: auto; 
 }
-.redes img {
-    width: 40px;
-    margin: 0 10px; /* Ajusta el espacio entre los iconos de las redes sociales */
+
+
+.redes {
+   padding-right: 60px;
+   border-left: 1px solid white;
+   padding-left: 15px;
+}
+
+.redes__logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    width: 180px;
+    height: 150px;
+    position: relative;
+    border-radius: 50%;
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+
+.redes a {
+    display: inline-block;
+    width: 35px;
+    height: 38px;
+    position: relative;
+    border-radius: 50%;
+    background-color: white;
+}
+
+
+.redes #redes_instagram::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -3px;
+    width: 44px;
+    height: 41px;
+    background-image: url(../../img/instagram.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.redes #redes_facebook::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -3px;
+    width: 44px;
+    height: 41px;
+    background-image: url('../../img/facebook.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
 }
 
 /* BANNER */
