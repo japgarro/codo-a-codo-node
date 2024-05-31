@@ -1,6 +1,5 @@
 form {
-    background-color: #A67244;
-    padding: 50px 55px;
+        padding: 50px 55px;
     box-shadow: 0 0 20px rgb(0, 0, 0 0,2);
     border-radius: 20px;
     text-align: center;
@@ -36,13 +35,13 @@ select option{
 }
 
 h2{
-    color: #18150E;
+    color: #FDFDFD;
     font-size: 35px;
     margin-top: 0;
 }
 
 label{
-    color: #18150E;
+    color: #FDFDFD;
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 15px;
@@ -101,6 +100,10 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
+    background-image: url('../img/cafe\ costado\ negro\ \(1\).jpg'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 nav {
